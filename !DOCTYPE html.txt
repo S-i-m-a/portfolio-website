@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <!-- First page -->
+   <div class="portfolio-container" id="page1">
+        <ul class="navlist">
+            <li><a href="#" onclick="showPage(0)" class="nav-link"><span>Home</span></a></li>  
+            <li><a href="#" onclick="showPage(1)" class="nav-link"><span>About</span></a></li>
+            <li><a href="#" onclick="showPage(2)" class="nav-link"><span>Resume</span></a></li>
+            <li><a href="#" onclick="showPage(3)" class="nav-link"><span>Projects</span></a></li>
+            <li><a href="#" onclick="showPage(4)" class="nav-link"><span>Contact</span></a></li>        
+        </ul>
+        <div class="left-container">
+           <div class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+            </div>  
+            <div class="content">
+                <p class="intro"> Hi! I am <span> Sima Pandit </span>.
+                <h1> Web Developer </h1>
+                <p class="detail">This is my portfolio website to show all <br> Details and work experiments
+                <div class="btn-container">
+                    <button>Hire Me</button>
+                    <button>View Project</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-container"></div>
+        <div class="design">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+   </div>
+
+   <!-- Second page (About section) -->
+   <div class="portfolio-container" id="page2" style="display: none;">
+    <div class="hero">
+        <nav>
+           
+            <div class="detel">
+                <h1>I'm <span class="highlight">Sima Pandit</h1>
+          Passionate about tech's positive impact, I'm a First Computer Science Year Bachelor's student
+          at <p> Amrita University (2023-2027). Deeply into Python, Java, and C++, I'm delving into CS fundamentals,<p>
+          AI, and ML. Actively engaged in projects and coding competitions, I'm excited for where my journey in <p>
+          computer science will take me.</p>
+ 
+                <a href="#">DOWNLOAD CV</a>
+            </div>
+
+            <div class="images">
+                <img src="C:\Users\sima9\OneDrive\Desktop\portfolio website\image\shape.png" class="">
+                <img src="C:\Users\sima9\OneDrive\Desktop\portfolio website\image\sima1.jpg" class="">
+            </div>
+            
+        </nav>
+    </div>
+    <ul class="navlist">
+        <li><a href="#" onclick="showPage(0)" class="nav-link"><span>Home</span></a></li>  
+        <li><a href="#" onclick="showPage(1)" class="nav-link"><span>About</span></a></li>
+        <li><a href="#" onclick="showPage(2)" class="nav-link"><span>Resume</span></a></li>
+        <li><a href="#" onclick="showPage(3)" class="nav-link"><span>Projects</span></a></li>
+        <li><a href="#" onclick="showPage(4)" class="nav-link"><span>Contact</span></a></li>        
+    </ul>
+</div>
+
+  <div class="portfolio-container" id="page3" style="display: none;">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <section>
+            <div class="container1" id="Skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <!-- HTML -->
+                    <div class="bar"> 
+                        <i style="color:#c95d2e" class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span> </span> 
+                        </div>
+                    </div>
+                    
+                    <!-- CSS -->
+                    <div class="bar">
+                        <i style="color:#147bbc" class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>   
+                        </div>
+                        <div class="progress-line css">
+                            <span> </span> 
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript -->
+                    <div class="bar">
+                        <i style="color:#f7df1e" class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javascript">
+                            <span> </span> 
+                        </div>
+                    </div>
+                    
+                    <!-- Python -->
+                    <div class="bar">
+                        <i style="color:#306998" class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span> </span> 
+                        </div>
+                    </div>
+                    
+                    <!-- Java -->
+                    <div class="bar">
+                        <i style="color:#007396" class='bx bxl-java'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span> </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">65%</div>
+                        <div class="text">Communication</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+<script>
+   function showPage(pageIndex) {
+       var pages = document.querySelectorAll('.portfolio-container');
+       pages.forEach(function(page, index) {
+           if (index === pageIndex) {
+               page.style.display = 'flex';
+           } else {
+               page.style.display = 'none';
+           }
+       });
+   }
+</script>
+</body>
+</html>
+/* Common styles for all pages */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #262525; /* Set the background color for all pages */
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    list-style: none;
+}
+
+.navlist li {
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.navlist li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: .1rem;
+    transition: width 0.3s ease; 
+    bottom: -5px;
+}
+
+.navlist li a:hover::after {
+    width: 100%;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    width: 30%;
+}
+
+.icons i {
+    color: #fff; /* Initial color is white */
+    cursor: pointer;
+}
+
+.icons i:hover {
+    background: linear-gradient(to right, #fff, #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left-container .content {
+    margin-left: 4rem;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5DB9EE;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.left-container .content .intro span {
+    color: #5DB9EE;
+}
+
+button:nth-child(1),
+button:nth-child(2) {
+    background: #5DB9EE;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    color: #262525;
+    transition: 0.5s ease;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+button:nth-child(2):hover,
+button:nth-child(1):hover {
+    background: #5DB9EE;
+    color: #262525;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 50%);
+    width: 38rem;
+}
+
+.circle:nth-child(2) {
+    aspect-ratio: 1;
+    background: linear-gradient(90deg, transparent 50%, #262525 100%), url("file:///C:/Users/sima9/OneDrive/Desktop/portfolio%20website/image/sima%20-%20Copy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30rem;
+    height: 30rem;
+    border: .1rem solid white;
+    box-shadow:
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877FF,
+        inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+    border-radius: 50%;
+}
+
+.navlist li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navlist li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navlist li a:hover {
+    color: blue; /* Change text color to blue when hovering */
+}
+
+.navlist li a::after {
+    width: 0; /* Initially set the underline to zero width */
+}
+
+.navlist li a:hover::after {
+    width: 100%; /* Bring back the underline when hovering */
+}
+
+.about-circle {                                                         
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero {
+    position: relative;
+    width: 90%;
+    height: 110vh;
+    background: #262525;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adjustments for the image */
+img {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+
+.detel {
+    position: absolute;
+    left: 20px; /* Adjust this value to your preference */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: orange; /* Change the color of the highlighted text */
+}
+
+
+.detel a {
+    background: black; /* Set initial background color to black */
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Set initial text color to blue */
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+    position: relative; /* Add position relative to position the border */
+}
+
+.detel a::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid blue; /* Thin white border */
+    border-radius: 5px; /* Border radius same as the button */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s; /* Add transition for smooth appearance */
+}
+
+.detel a:hover::before {
+    opacity: 1; /* Make the border visible on hover */
+}
+
+.detel a:hover {
+    background: #fff; /* Change background color to blue on hover */
+    color: black; /* Change text color to black on hover */
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 80%;
+    position: absolute;
+    left: 80%;
+    bottom: 20px; /* Adjusted from 20 to 20px */
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .girl {
+    left: 45%;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 1;
+    width: 250px; 
+    height: auto; 
+}
+
+.about-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2;
+}
+
+
+.active span {
+    color: blue; /* Change text color to blue for active link */
+}
+
+/* Skills Section */
+.portfolio-container .sub-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+section{
+dispaly:flex;
+flex-warp;
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading1 {
+    font-size: 2rem;
+    color: #5DB9EE;
+    margin-bottom: 1.5rem;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.bar i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.info span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.progress-line {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.radial-bars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radial-bar {
+    text-align: center;
+    position: relative;
+}
+
+.radial-bar svg {
+    width: 200px;
+}
+
+.circle .percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle .text {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.path {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.path-1 {
+    stroke: #5DB9EE;
+}
+
+.path-2 {
+    stroke: #f7df1e;
+}
+
+.path-3 {
+    stroke: #147bbc;
+}
+
+.path-4 {
+    stroke: #c95d2e;
+}
+
+@keyframes animate {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

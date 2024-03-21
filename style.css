@@ -1,0 +1,743 @@
+/* Common styles for all pages */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #262525; /* Set the background color for all pages */
+}
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #262525; /* Set the background color for all pages */
+}
+
+
+.input-field:last-child {
+    width: 100%;
+}
+
+.input-field:last-child input {
+    height: 50px; /* Increase height for the last input */
+    resize: none; /* Disable resizing for the last input */
+}
+
+.input-field:hover input {
+    background-color: #FFC0CB; /* Change background color on hover to pink */
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #262525; /* Background color */
+    color: white; /* Text color */
+    padding: 30px; /* Padding around the content */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align content to the top */
+    flex-direction: column; /* Align items in a column */
+}
+
+.contact h2 {
+    text-align: left; /* Align the heading to the left */
+    color: blue; /* Text color */
+    margin-top: 20px; /* Adjust top margin */
+    margin-left: 0; /* Set left margin to 0 */
+}
+
+/* Adjust other styles as needed */
+
+.ftco-social {
+    text-align: left; /* Align the social links to the left */
+}
+
+.input-box {
+    margin-bottom: 40px; /* Increased spacing between input boxes */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Full width for the input box */
+    text-align: center;
+}
+
+.input-field {
+    position: relative;
+    width: calc(50% - 20px); /* Adjusted width */
+    margin-bottom: 20px; /* Spacing between input fields */
+    text-align: center; /* Center-align the input field */
+}
+
+.input-field input {
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside input */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    outline: none; /* No outline */
+    background-color: #333; /* Input background color */
+    color: white; /* Input text color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.input-field input::placeholder {
+    color: white; /* Placeholder text color */
+}
+
+.input-field .focus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.input-field input:focus ~ .focus {
+    width: 100%;
+}
+
+.input-field:last-child {
+    width: 100%;
+}
+
+.input-field:last-child input {
+    height: 50px; /* Increase height for the last input */
+    resize: none; /* Disable resizing for the last input */
+}
+
+.input-field input:focus {
+    color: black; /* Change text color to black when input is focused */
+}
+
+.input-field input:not(:focus) {
+    color: white; /* Change text color to white when input is not focused */
+}
+
+.input-field:hover input {
+    background-color: #87CEEB; /* Change background color on hover to light blue */
+}
+
+.contact-form {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Other styles... */
+
+.container {
+    background: #262525; /* Set the background color for all pages */
+      min-height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    list-style: none;
+}
+
+.navlist li {
+}
+
+.navlist li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.navlist li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: .1rem;
+    transition: width 0.3s ease; 
+    bottom: -5px;
+}
+
+.navlist li a:hover::after {
+    width: 100%;
+}
+
+.left-container,
+.right-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left-container {
+    width: 70%;
+    padding-left: 3rem;
+}
+
+.right-container {
+    width: 30%;
+}
+
+.icons i {
+    color: #fff; /* Initial color is white */
+    cursor: pointer;
+}
+
+.icons i:hover {
+    background: linear-gradient(to right, #fff, #3877FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left-container .content {
+    margin-left: 4rem;
+}
+
+.content h1 {
+    font-size: 4rem;
+    color: #5DB9EE;
+}
+
+.content .detail {
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+.content .intro {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.left-container .content .intro span {
+    color: #5DB9EE;
+}
+
+button:nth-child(1),
+button:nth-child(2) {
+    background: #5DB9EE;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    color: #262525;
+    transition: 0.5s ease;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+button:nth-child(2):hover,
+button:nth-child(1):hover {
+    background: #5DB9EE;
+    color: #262525;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.design .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background: linear-gradient(90deg, transparent 50%, #262525 70%);
+    width: 38rem;
+}
+
+.circle:nth-child(2) {
+    aspect-ratio: 1;
+    background: linear-gradient(90deg, transparent 50%, #262525 100%), url("C:\\Users\\sima9\\OneDrive\\Desktop\\portfolio website\\image\\Female-College-Student-FB-1024x683.jpg");
+    background-size: contain; /* Change from cover to contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30rem;
+    height: 30rem;
+    border: .1rem solid white;
+    box-shadow:
+        0 0 1rem #fff,
+        inset 0 0 1rem #fff,
+        0 0 2rem #3877FF,
+        inset 0 0 2rem #3877FF,
+        0 0 4rem #3877FF,
+        inset 0 0 4rem #3877FF;
+    border-radius: 50%;
+}
+
+
+.navlist li a::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .5s;
+}
+
+.navlist li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navlist li a:hover {
+    color: blue; /* Change text color to blue when hovering */
+}
+
+.navlist li a::after {
+    width: 0; /* Initially set the underline to zero width */
+}
+
+.navlist li a:hover::after {
+    width: 100%; /* Bring back the underline when hovering */
+}
+
+.about-circle {                                                         
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.hero {
+    position: relative;
+    width: 90%;
+    height: 110vh;
+    background: #262525;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adjustments for the image */
+img {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+
+.detel {
+    position: absolute;
+    left: 20px; /* Adjust this value to your preference */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: orange; /* Change the color of the highlighted text */
+}
+
+
+.detel a {
+    background: black; /* Set initial background color to black */
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Set initial text color to blue */
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+    position: relative; /* Add position relative to position the border */
+}
+
+.detel a::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid blue; /* Thin white border */
+    border-radius: 5px; /* Border radius same as the button */
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s; /* Add transition for smooth appearance */
+}
+
+.detel a:hover::before {
+    opacity: 1; /* Make the border visible on hover */
+}
+
+.detel a:hover {
+    background: #fff; /* Change background color to blue on hover */
+    color: black; /* Change text color to black on hover */
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 80%;
+    position: absolute;
+    left: 80%;
+    bottom: 20px; /* Adjusted from 20 to 20px */
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape {
+    bottom: 40px;
+}
+
+.images:hover .girl {
+    left: 45%;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 1;
+    width: 250px; 
+    height: auto; 
+}
+
+.about-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2;
+}
+
+
+.active span {
+    color: blue; /* Change text color to blue for active link */
+}
+
+
+
+
+
+
+
+
+/* Skills Section */
+.portfolio-container .sub-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* Corrected the property name */
+}
+
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.heading1 {
+    font-size: 2rem;
+    color: #5DB9EE;
+    margin-bottom: 1.5rem;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.bar i {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.info span {
+    font-size: 1
+    .2rem;
+    color: #fff;
+}
+
+.progress-line {
+    width: 100%;
+    height: 0.5rem;
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-line .progress {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #0ef;
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+}
+
+/* Additional CSS to ensure proper animation */
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line {
+    position: relative; /* Ensure positioning context */
+}
+
+.progress-percent {
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    right: 0;
+    color: #c95d2e; /* Match the progress bar color */
+    font-weight: bold;
+}
+
+/* CSS */
+.progress-line.css span::after,
+.progress-line.javascript span::after,
+.progress-line.python span::after,
+.progress-line.java span::after {
+    display: none; /* Hide the default percentage display */
+}
+
+/* Adjust the position of the percentage text */
+.progress-percent {
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    right: 0;
+    font-weight: bold;
+}
+
+/* Match the color of the percentage text with the respective progress bar */
+.progress-line.css .progress-percent {
+    color: #orange;
+}
+
+.progress-line.javascript .progress-percent {
+    color: #orange;
+}
+
+.progress-line.python .progress-percent {
+    color: #orange;
+}
+
+.progress-line.java .progress-percent {
+    color: #orange;
+}
+
+
+.radial-bars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radial-bar {
+    text-align: center;
+    position: relative;
+}
+
+.radial-bar svg {
+    width: 200px;
+}
+
+.percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: orange;
+    dominant-baseline: middle;
+}
+
+.text {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-45%);
+}
+
+.path {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.path-1 {
+    stroke: #5DB9EE; /* Creativity */
+}
+
+.path-2 {
+    stroke: #f7df1e; /* Communication */
+}
+
+.path-3 {
+    stroke: #147bbc; /* Problem Solving */
+}
+
+.path-4 {
+    stroke: #c95d2e; /* Teamwork */
+}
+/* Common animations for all pages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Page-specific animations */
+/* Add animation to elements in the homepage */
+.hero {
+    animation: fadeIn 1s ease-out;
+}
+
+.left-container .content {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.right-container {
+    animation: slideInFromRight 1s ease-out;
+}
+
+/* Add animation to elements in the about page */
+.about-circle {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+/* Add animation to elements in the skills page */
+.portfolio-container .sub-title {
+    animation: fadeIn 1s ease-out;
+}
+
+.bar {
+    animation: slideInFromBottom 1s ease-out;
+}
